@@ -1,0 +1,201 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        #go
+        {
+            background-image: linear-gradient(145deg,purple,blue)
+        }
+        #gone
+        {
+            background-image: linear-gradient(180deg,blue,lightblue)
+        }
+        #gon
+        {
+            background-image: linear-gradient(180deg,lightblue,lightblue)
+        }
+        #goes
+        {
+            background-image: linear-gradient(200deg,black,grey,silver,grey)
+        }
+    </style>
+	<meta charset="utf-8" />
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Dashboard</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet"/>
+
+    
+    <link href="{% static 'css/paper-dashboard.css' %}" rel="stylesheet"/>
+
+
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-background-color="black" data-active-color="success">
+
+    
+
+    	<div class="sidebar-wrapper" >
+            <div class="logo">
+                <a href="#" class="simple-text">
+                  <img src="{% static '/images/head.png' %}" width=150px>
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="#">
+                        <i class="ti-panel"></i>
+                        <p><font size="4">   Dashboard</font></p><br>
+                        <img src="{% static 'images/ult.jpg' %}" height="00" width="100">
+                    </a>
+                </li>
+               
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel" id="gon" >
+        <nav class="navbar navbar-default">
+            <div class="container-fluid" id="gone" style="border: 5px  solid red">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><font color="white">Welcome to Web Scraper</font></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+						<li>
+                            <a href="{% url 'homepage' %}">
+								<i class="ti-settings"></i>
+								<p><font color="white">Back-2-Home</font></p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div >
+            <img src="{% static 'images/scraper1.png' %}" height="300" width="1075" style="border: 5px solid orange">
+          
+
+        <div class="container-fluid part3" id=go style="border: 3px solid peru">
+        <div class="row" >
+            <div class="col-sm-4 fontss" align="center">
+                <br>
+                <h3 style="background-color:black; color:white; width:180px;">Download<br>Structure</h3>
+                <table style="width:180px;">
+                    <tr>
+                        <td><form action="/action_page.php">
+                              <input type="text" id="ds" placeholder="Enter URl" required=""><br>
+                          </td>
+                    </tr>
+                    <tr>
+                        <td><i><b><font color="white">Download Html code for the requested url.</font></i></b>
+                        
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <font color="white"><button type="button" class="btn" id='b_ds' >Extract</button></font></a>
+                        </td>
+                    </tr>
+                 </td>
+                </table>
+                
+            </div>
+            <div class="col-sm-4" align="center">
+                <br>
+                <h3 style="background-color:black; color:white; width:200px;">Download<br>Links</h3>
+                <table width=200px>
+                    <tr>
+                        <td>
+                            <form action="/action_page.php">
+                              <input type="text" id="dl" placeholder="Enter URl" required=""><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i><b><font color="white">Download all links in the requested Url.</font></i></b></td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <button type="button" class="btn" id='b_dl'>Extract</button></a>
+                             
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="col-sm-4" align="center">
+                <br>
+                <h3 style="background-color:black; color:white; width:150px;">Download<br>Text</h3>
+                <table width=150px>
+                    <tr>
+                        <td>
+                            <form action="#">
+                              <input type="text" id="dt" placeholder="Enter URl" required=""><br>
+                              
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i><b><font color="white">Download text from the requested Url.</font> </i></b></td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <button type="button" class="btn" id='b_dt'>Extract</button></a>
+
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+
+   
+ 
+        </div>                   
+
+        <footer class="footer">
+            <div class="container-fluid" style="background-image: linear-gradient(145deg,black,grey,black);">
+                <nav class="pull-left">
+                    
+                </nav>
+                <div class="copyright pull-right">
+                   <font color="white"> &copy; <script>document.write(new Date().getFullYear())</script>, made by <i> by </i><b> Abhishek Joshi</b></font>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{% static 'js/dash.js' %}"></script>
+
+</body>
+
+</html>

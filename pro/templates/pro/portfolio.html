@@ -1,0 +1,154 @@
+<!DOCTYPE>
+{% load static %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>PORTFOLIO</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.dropotron-1.0.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.slidertron-1.1.js' %}"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#menu > ul').dropotron({
+			mode: 'fade',
+			globalOffsetY: 11,
+			offsetY: -15
+		});
+		$('#slider').slidertron({
+			viewerSelector: '.viewer',
+			indicatorSelector: '.indicator span',
+			reelSelector: '.reel',
+			slidesSelector: '.slide',
+			speed: 'slow',
+			advanceDelay: 4000
+		});
+	});
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" >
+		<div id="logo">
+			<h1><a href="{% url 'homepage' %}">PORTFOLIO</a></h1>
+		</div>
+		<div id="slogan">
+			<img src="{% static 'images/abhi.jpg' %}" height="150" width="200" style="border: 2px dashed white">
+		</div>
+	</div>
+	
+	<div id="slider">
+		<div class="viewer">
+			<div class="reel">
+		
+				<div class="slide">
+					<img src="{% static 'images/slide04.png' %}" alt=""  height="230" width="870">
+				</div>
+				<div class="slide">
+					<img src="{% static 'images/slide03.jpg' %}" alt="" height="230" width="870" >
+				</div>
+				<div class="slide">
+					<img src="{% static 'images/slide02.jpg' %}" alt="" height="230" width="870" >
+				</div>
+				<div class="slide">
+					<img src="{% static 'images/slide01.jpg' %}" alt="" height="230" width="870" >
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<div id="page">
+		<div id="content">
+			<div class="box" style="color: black;">
+				<h2><b><u>About Me</u></b></h2>
+				<p >
+					 <h4 > Hi! I am Abhishek. I am a B.tech Student in the Chandigarh University.I am a enthusiastic<b> Data Analyst</b>. I am curently working in the<strong> data science</strong> field.I had a keen interest in the <b>Machine Learning</b> .I had a proficient handling in the <strong>Python </strong> Language. </h4>
+				</p>
+			</div>
+			<div class="box" id="content-box1">
+				<h3><b><u>CERTIFICATIONS</u></b></h3>
+				<ul class="section-list">
+					<li class="first">
+						<img class="pic alignleft" src="{% static 'images/pic01.jpg' %}" width="70" height="70" alt="" />
+						<span>Introduction to python by DATACAMP.</span>
+					</li>
+					<li>
+						<img class="pic alignleft" src="{% static 'images/pic02.jpg' %}" width="70" height="70" alt="" />
+						<span>Intermediate Python by DATACAMP .</span>
+					</li>
+					<li class="last">
+						<img class="pic alignleft" src="{% static 'images/pic03.jpg' %}" width="70" height="70" alt="" />
+						<span>Fullstack Data Analyst by DATACAMP</span>
+					</li>
+				</ul>
+			</div>
+			<div class="box" id="content-box2">
+				<h3><b><u>LANGUAGES</u></b></h3>
+				<p>
+					I had a Good Hand in various languages that are described below.
+				</p>
+				<ul class="list">
+					<li class="first"><a href="#">C++</a></li>
+					<li><a href="#">Python</a></li>
+					<li><a href="#">HTML-5</a></li>
+					<li><a href="#">CSS</a></li>
+					<li class="last"><a href="#">JS</a></li>
+				</ul>
+			</div>
+			<br class="clearfix" />
+		</div>
+		<div id="sidebar">
+			<div class="box">
+				<h3><b><u>Completed Datasets</u></b></h3>
+				<ul class="list">
+					<li class="first"><a href="#">Titanic</a></li>
+					<li><a href="">Iris</a></li>
+					<li><a href="#">House Sale Prediction</a></li>
+					<li><a href="#">SaleMart</a></li>
+					<li class="last"><a href="#">Advance Regression</a></li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3><b><u>Hobbies</u></b></h3>
+				<div class="date-list">
+					<ul class="list date-list">
+						<li class="first">HandBall</li>
+						<li>Kabaddi</li>
+						<li>Data Wrangling</li>
+						<li class="last">Music</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br class="clearfix" />
+	</div>
+	<div id="page-bottom">
+		<div id="page-bottom-content">
+			<h3>Quote Of Day</h3>
+			
+				<h4 font color="white">“Time and money are your scarcest resources. You want to make sure you’re allocating them in highest-impact areas. Data reveals impact, and with data, you can bring more science to your decisions.”<br>
+				================================================<br>
+
+                Matt Trifiro, CMO at Heroku </h3>
+			
+		</div>
+		<div id="page-bottom-sidebar">
+			<h3>FIND ME:-</h3>
+			<ul class="list">
+				<li class="first">Phn-7340888872</li>
+				<li>Phn-8194892667</li>
+				<li class="last">ajoshi1289@gmail.com</li>
+			</ul>
+		</div>
+		<br class="clearfix" />
+	</div>
+</div>
+<div id="footer">
+	&copy; All rights reserved. Design by Abhishek Joshi</a>.
+</div>
+</body>
+</html>

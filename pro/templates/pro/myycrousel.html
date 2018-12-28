@@ -1,0 +1,467 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>Analytics School</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="{% static 'css/myycrousel.css' %}">
+</head>
+<body bgcolor=#307CF8>
+<!--##########################################################-->
+<!--Navbar settings -->
+<nav class="navbar navbar-default">
+	<div class="container-fluid navbaritems">
+		<div class="navbar-header">
+			<a class="navbar-brand imgbr">
+				<img src="{% static '/images/head.png' %}" width=150px>
+			</a>
+		</div>
+		<div class="navbar">
+        	<ul class="nav navbar-nav navbar-right">
+        		<li><a href="#"><b>HOME</b></a></li>
+        		<li><a href="dash"><b>DASHBOARD</b></a></li>
+		        <li><a href="docu"><b>DOCUMENTATION</b></a></li>
+		        <li><a href="port"><b>PORTFOLIO</b></a></li>
+		        <li><a href="/"><b>LOG-OUT</b></a></li>
+		        <li><a></a></li>
+      		</ul>
+    	</div>
+	</div>
+</nav>
+<!--##########################################################-->
+	<div class="container-fluid">
+		<div id="myCarousel" class="carousel slide carousel-inner" data-ride="carousel">
+<!--##########################################################-->
+<!--This is for giving o o o at bottom to switch b/w pics-->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active" style="flood-color: blue;"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+<!--##########################################################-->
+<!--This is for providing pics-->
+			<div class="item active" align="center" >
+				<img src="{% static '/images/2.jpg' %}" width="100%" style="height: 400px;" >
+			</div>
+			<div class="item" align="center">
+				<img src="{% static '/images/3.jpg' %}" width="100%" style="height:400px;">
+			</div>
+			<div class="item" align="center">
+				<img src="{% static '/images/1.jpg' %}" width="100%" style="height:400px;">
+			</div>
+
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+<!--This is for giving < button to move to previous pic-->
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+<!--##########################################################-->
+		</div>
+	</div>
+
+    <!--  <div class="container-fluid part3">
+		<div class="row" >
+		    <div class="col-sm-4 fontss" align="center">
+		    	<a></a>
+		    	<a></a>
+
+		    	<img src="{% static '/images/Dv.jpg' %}"  margin="10" width="70%" style="height:300px " border="3">
+		    </div>
+		    <div class="col-sm-4" align="center">
+               <img src="{% static '/images/Dw.jpg' %}" width="70%" style="height:300px;">
+		    </div>
+    		<div class="col-sm-4" align="center">
+               <img src="{% static '/images/Dc.jpg' %}" width="70%" style="height:300px ;">
+    		</div>
+  		</div>
+	</div> -->
+
+
+
+
+
+	<div class="container-fluid part3">
+		<div class="row" >
+		    <div class="col-sm-4 fontss" align="center">
+		    	<br>
+		    	<h3 style="background-color:black; color:white; width:200px;">DATA<br>VISUALISATION</h3>
+		    	<table style="width:200px;">
+		    		<tr>
+		    			<td><i><b>Data Visualisation</i></b></td>
+		    		</tr>
+		    		<tr>
+		    			<td><i><b>Technique to visualise the data to get more information from the data and related infromation.</i></b>
+		    			
+		    		</tr>
+		    		<tr align="center">
+		    			<td>
+		    				<a href="https://www.techopedia.com/definition/30180/data-visualization"><button type="button" class="btn">Read More</button></a>
+		    			</td>
+		    		</tr>
+		    	 </td>
+		    	</table>
+		    	<a></a>
+		    	<b><font color="black">============================================</font></b>
+		    	<img src="{% static '/images/Dv.jpg' %}"  margin="10" width="70%" style="height:300px " >
+		    	<b>============================================</b>
+		    	<br>
+		    </div>
+		    <div class="col-sm-4" align="center">
+		    	<br>
+		    	<h3 style="background-color:black; color:white; width:200px;">DATA<br>WRANGLING</h3>
+		    	<table width=200px>
+		    		<tr>
+		    			<td><i><b>Data Wrangling</i></b></td>
+		    		</tr>
+		    		<tr>
+		    			<td><i><b>It is technique to derive the carious aspects from the data and built the data driven model.</i></b></td>
+		    		</tr>
+		    		<tr align="center">
+		    			<td>
+		    				<a href="https://www.datawatch.com/what-is-data-wrangling/"><button type="button" class="btn">Read More</button></a>
+		    				 
+		    			</td>
+		    		</tr>
+		    	</table>
+		    	<b><font color="black">============================================</font></b>
+		    	<img src="{% static '/images/Dw.jpg' %}" width="70%" style="height:300px;">
+		    	<b><font color="black">============================================</font></b>
+		    	<br>
+		    </div>
+    		<div class="col-sm-4" align="center">
+    			<br>
+    			<h3 style="background-color:black; color:white; width:200px;">DATA<br>CLEANING</h3>
+		    	<table width=200px>
+		    		<tr>
+		    			<td><i><b>Data Cleaning</i></b></td>
+		    		</tr>
+		    		<tr>
+		    			<td><i><b>It is the technique to clean out the data from the unrelavant data and filter out the data.</i></b></td>
+		    		</tr>
+		    		<tr align="center">
+		    			<td>
+		    				<a href="https://www.techopedia.com/definition/1174/data-cleansing"><button type="button" class="btn">Read More</button></a>
+
+		    			</td>
+		    		</tr>
+		    	</table>
+		    	<b><font color="black">==============================================</font></b>
+		    	<img src="{% static '/images/Dc.jpg' %}" width="70%" style="height:300px ;">
+		    	<b><font color="black">==============================================</font></b>
+		    	<br>
+    		</div>
+  		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row" >
+		<div class="col-sm-4" align="right">
+			<br>
+			<table border=2 class="tblbor" width=300px height=500px>
+				<tr style="background-color:peru; color: white">
+    				<td align="center">TOOLS USED</td>
+    			</tr>
+    			<tr style="background-color:lightgreen; color: white">
+    				<td align="center">&nbsp; &nbsp;Python</td>
+    			</tr>
+    			<tr style="background-color:blue; color: white">
+    				<td align="center">&nbsp; &nbsp;R</td>
+    			</tr>
+    			<tr style="background-color:skyblue; color: white">
+    				<td align="center">&nbsp; &nbsp;Scala</td>
+    			</tr>
+    			<tr style="background-color:violet; color: white">
+    				<td align="center">&nbsp; &nbsp;Hadoop</td>
+    			</tr>
+    			<tr style="background-color:violet; color: white">
+    				<td align="center">&nbsp; &nbsp;SAS</td>
+    			</tr>
+    			<tr style="background-color:skyblue; color: white">
+    				<td align="center">&nbsp; &nbsp;Hive</td>
+    			</tr>
+    			<tr style="background-color:blue; color: white">
+    				<td align="center">&nbsp; &nbsp;Pig</td>
+    			</tr>
+    			<tr style="background-color:lightgreen; color: white">
+    				<td align="center">&nbsp; &nbsp;Apache Spark</td>
+    			</tr>
+    			<tr style="background-color:peru; color: white">
+    				<td align="center">&nbsp; &nbsp;Power BI</td>
+    			</tr>		
+    		</table>
+    	</div>
+    	<div class="col-sm-4">
+    		<h3><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CARRIER PATHS</b></h3>
+    		<table align="center">
+    			<tr>
+    				<td align="left">
+    					<h1>
+    						<span class="glyphicon glyphicon-blackboard sizes"></span> 
+    					</h1>
+    				</td>
+    				<td>
+    					<h3>Data Scientist</h3>
+    				</td>
+    			</tr>
+    			<tr>
+		 			<td colspan=2>The high most path of acheivement<br>always ready to help you.</td>
+    			</tr>
+    			<tr>
+    				<td colspan=2>Person Possess Knowledge of<br>every analytics tools.<br></td>
+    			</tr>
+
+    			<tr>
+    				<td>
+    					<h1>
+    						<span class="glyphicon glyphicon-blackboard sizes"></span> 
+    					</h1>
+    				</td>
+    				<td>
+    					<h3>Data Analyst</h3>
+    				</td>
+    			</tr>
+    			<tr>
+		 			<td colspan=2>Person genreally deal with the <br>data cleaning .</td>
+    			</tr>
+    			<tr>
+    				<td colspan=2>Not concerned about the other aspects<br>except data muging and cleaning without<br>problem.</td>
+    			</tr>
+
+    			<tr>
+    				<td>
+    					<h1>
+    						<span class="glyphicon glyphicon-blackboard sizes"></span> 
+    					</h1>
+    				</td>
+    				<td>
+    					<h3>Data Enginner</h3>
+    				</td>
+    			</tr>
+    			<tr>
+		 			<td colspan=2>Data Enginer cleans as well visualise data <br>models.<br>
+		 			              from the various datasets .</td>
+    			</tr>
+    			<tr>
+    				<td colspan=2 align="center">
+    					<br>
+    					<br>
+    					<a href="https://www.springboard.com/blog/data-science-career-paths-different-roles-industry/"><button type="button" class="btn">Read More</button></a>
+    					<br>
+    					<br>
+    				</td>
+    			</tr>
+    		</table>
+    	</div>
+    	<div class="col-sm-4 margg" align="left">
+    		<br><br>
+    		<br>
+    		<table>
+    			<tr>
+    				<td align="left">
+    					<h1>
+    						<span class="glyphicon glyphicon-blackboard sizes"></span> 
+
+    					</h1>
+    				</td>
+    				<td>
+    					<h3>Bussines Analyst</h3>
+    				</td>
+    			</tr>
+    			<tr>
+		 			<td colspan=2>Bussiness analyst makes a bussiness<br>regarding decision and predictions.</td>
+    			</tr>
+    			<tr>
+    				<td colspan=2>Always eager to built the data driven<br>model to reach out.<br></td>
+    			</tr>
+    			
+    		</table>
+    	</div>
+</div>
+	</div>
+	<div class="container-fluid part3">
+		<div class="row" >
+			<div class="col-sm-5">
+				<center><h2>Friends</h2></center>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid part3">
+		<div class="row" >
+			<div class="col-sm-2" align="right">
+			    <img src="{% static 'images/i.jpg' %}" class="img-circle" alt="Cinque Terre" width="100" height="100">
+			</div>
+			<div class="col-sm-2" align="left">
+				<h5><i><b>Harmanjeet -</b></i><br>A friend with a great humor and hardworker</h5>
+			</div>
+			<div class="col-sm-2" align="right">
+			    <img src="{% static 'images/im.jpg' %}" class="img-circle" alt="Cinque Terre" width="100" height="100">
+			</div>
+			<div class="col-sm-2" align="left">
+				<h5><i><b>Abhishek Jha-</b></i><br>A great partner in all my activities.</h5>
+			</div>
+			<div class="col-sm-2" align="right">
+			    <img src="{% static 'images/img.jpg' %}" class="img-circle" alt="Cinque Terre" width="100" height="100">
+			</div>
+			<div class="col-sm-2" align="left">
+				<h5><i><b>Harshit Grover-</b></i><br>A friend who spend half of its life in studying.</h5>
+				<br>
+			<br>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="background-color: black;">
+		<div class="row">
+			<div class="col-sm-3" align="center">
+				<h3 style="color:white;">COMPANY</h3>
+				<table style="color:blue; width:150px;">
+				<h5>
+					<tr>
+						<td>
+							<br>Navigate your next<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>About Us<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Careers<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Investors<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Newsroom
+						</td>
+					</tr>
+				</h5>
+				</table>
+			</div>
+			<div class="col-sm-3" align="center">
+				<h3 style="color:white;">SUBSIDIARIES</h3>
+				<table style="color:blue; width:150px;">
+				<h5>
+					<tr>
+						<td>
+							<br>EdgeVerveSystems<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>BPM<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Counsulting<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Public Services<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Skava Systems
+						</td>
+					</tr>
+				</h5>
+				</table>
+			</div>
+			<div class="col-sm-3" align="center">
+				<h3 style="color:white;">PROGRAMS</h3>
+				<table style="color:blue; width:150px;">
+				<h5>
+					<tr>
+						<td>
+							<br>Foundation<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Foundation USA<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Science Foundation<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Leadership Institute<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Sustainability
+						</td>
+					</tr>
+				</h5>
+				</table>
+			</div>
+			<div class="col-sm-3" align="center">
+				<h3 style="color:white;">SUPPORT</h3>
+				<table style="color:blue; width:150px;">
+				<h5>
+					<tr>
+						<td>
+							<br>Terms of Use<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Privacy Statement<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Cookie Policy<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Trademarks<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br>Map Site
+							<br>
+							<br>
+						</td>
+					</tr>
+				</h5>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid foots">
+		<div class="col-sm-3" align="center">
+			<br>
+			Copyright 2018 Data Analytics.Designed by Abhishek Joshi
+		</div>
+		<div class="col-sm-7" align="center">
+			
+		</div>
+		<div class="col-sm-2" align="left">
+			<h1>
+				<span class="glyphicon glyphicon-blackboard"></span> 
+				<span class="glyphicon glyphicon-blackboard"></span> 
+			</h1>
+		</div>
+	</div>
+</body>
+</html> 

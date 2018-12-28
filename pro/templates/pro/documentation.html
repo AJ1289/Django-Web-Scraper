@@ -1,0 +1,123 @@
+{% load static %}
+<html>
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Documentation</title>
+<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/documentation.css' %}" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/documentation.js' %}"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+                 
+				<h1>Documentation</h1>
+				<p>Web <a href="http://templated.co" rel="nofollow">Scraper</a></p>
+				<h3>================================================================</h3>
+			</div>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu-wrapper">
+		<ul id="menu">
+			<li class="current_page_item"><a href="#"><span>Main</span></a></li>
+			
+			<li><span>Links</span>
+				<ul>
+					<li class="first"> <a href="https://scrapy.org/">Scrappy</a> </li>
+					<li> <a href="http://textblob.readthedocs.io/en/dev/">TextBlob</a> </li>
+					<li class="last"> <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautifulsoup</a> </li>
+				</ul>
+			</li>
+			<li><a href="{% url 'homepage' %}"><span>Back-2-Home</span></a></li>
+		</ul>
+		<script type="text/javascript">
+			$('#menu').dropotron();
+		</script>
+	</div>
+	<!-- end #menu -->
+	<div id="splash"><img src="{% static 'images/pics01.jpg' %}" width="980" height="300" alt="" /></div>
+	<div id="page">
+		<div id="content">
+			<div class="contentbg">
+				<div class="post">
+					<h2 class="title">What is Web Scrapping ?.</h2>
+					<p class="meta">Posted by <a href="#"><b>Abhishek</b></a> on June, 2018
+						</p>
+					<div class="entry">
+						<p>
+							To put in a nutshell,<b> web scraping </b>is a process of data extraction from websites. All the job is carried out by a piece of code which is called a <b>“scraper”</b>. First, it sends a <b>“GET”</b> query to a specific website. Then, it parses an HTML document based on the received result. After it’s done, the scraper searches for the data you need within the document, and, finally, converts it into whatever specified format.
+						</p>
+					</div>
+				</div>
+				<div class="post">
+					<h2 class="title">WHAT DO I USE FOR WEB SCRAPING ?.</h2>
+					<p class="meta">Posted by <a href="#"><b>Abhishek</b></a> on June, 2018
+						</p>
+					<div class="entry">
+						<ul>
+							<li>Separate services that work through an API or have a web interface (Embedly, DiffBot etc.)</li>
+							<li>Various open source projects implemented in different programming languages (Python: Goose, Scrapy; PHP: Goutte; Ruby: Readability, Morph, etc.).</li>
+                        </ul>
+						 
+					</div>
+				</div>
+				<div class="post">
+					<h2 class="title">Mechanism of Web Scrapping ?.</h2>
+					
+					<div class="entry">
+						<img src="{% static 'images/scrap.png' %}" height="300" width="700" style="border: 2px dashed black;">
+					</div>
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Question ?</h2>
+						<p>How it really works......</p>
+					</li>
+					<li>
+						<h2>Tools Used</h2>
+						<ul>
+							<li>Scrappy</li>
+							<li>BeautifulSoup</li>
+							<li>TextBlob</li>
+							<li>Java</li>
+							<li>Php</li>
+						</ul>
+					</li>
+					<li>
+						<h2>Methodology</h2>
+						<ul>
+							<li>Get Request</li>
+							<li>HTML parser</li>
+							<li>Response</li>
+							<li>Scrapp Data</li>
+						</ul>
+					</li>
+					<li>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>2018. All rights reserved. Design by Abhishek.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
